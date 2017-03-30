@@ -1,0 +1,69 @@
+#logout_button {
+  margin-left: 865px;
+  margin-bottom: -25px;
+}
+
+#post_block p {
+  color:  rgb(241, 116, 1);
+}
+
+#post_show{
+  color:  rgb(241, 116, 1);
+  margin-left: 400px;
+  border: 5px;
+
+}
+#users_controller{
+  /*background-color: #12129c;*/
+  padding-bottom: 1px;
+  padding-top: 10px;
+}
+#users_controller h4{
+  color:  rgb(241, 116, 1);
+}
+
+#post_feed_background{
+  background-color: #d4d2d2;
+  margin-top: -20px;
+  padding-left: 15px; 
+  }
+
+#new_user_registration{
+  display: inline-block;
+  width: 125px;
+
+}
+
+#user_login{
+  display: inline-block;
+  width: 100px;
+  vertical-align: top;
+  margin-right: 270px;
+  margin-left: 80px;
+}
+
+#login_page_background{
+  background-image: url("../images/uva_logo_2.jpg");
+  /*background-repeat: repeat-x;*/
+  height: 1366px;
+}
+#logo_home_button{
+  font-size: 22px;
+}
+#rosterhome_body {
+  margin-left: 15px;
+}
+
+#current_roster {
+  display: inline-block;
+}
+
+#past_season_rosters_options{
+  display: inline-block;
+  vertical-align: top;
+
+}
+
+#past_season_rosters_options p {
+  text-align: right;
+}

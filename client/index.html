@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="uvaApp">
+<head>
+	<title>Go Hoos</title>
+
+	<link rel="stylesheet" href="/static/css/style.css">
+	<link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css">
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+	<script src="angular/angular.js"></script>
+	<script src="angular-route/angular-route.js"></script>
+	<script src="angular-cookies/angular-cookies.js"></script>
+	<script src="static/users/AppMain.js"></script>
+	<script src="static/users/usersController.js"></script>
+	<script src="static/users/usersFactory.js"></script>
+	<script src="bootstrap/dist/js/bootstrap.js"></script>
+
+	<script src="static/js/dashboardController.js"></script>
+	<script src="static/js/showController.js"></script>
+	<script src="static/js/postFactory.js"></script>
+
+</head>
+<body>
+<div id="nav_bar">
+	<nav class="navbar navbar-default">
+	  <div class="container-fluid">
+			<ul class="nav nav-pills">
+			  <li id="logo_home_button" role="presentation"><a href="#"><span style="color:#12129c">Hoo</span>plah</a></li>
+			  <li role="presentation"><a href="#">Profile</a></li>
+			  <li role="presentation"><a href="/#!/dashboard">Post Feed</a></li>
+			  <li role="presentation"><a href="/#!/rosters">Roster History</a></li>
+			</ul>
+	  </div>
+	</nav>
+</div>
+
+<!-- rendering all partials below -->
+	<div ng-view="">
+
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<div id="login_page_background" ng-controller="usersController as UC">
+
+<fieldset id="user_login">
+  <h3>Login</h3>
+  <form ng-submit="UC.login()">
+    <div ng-if="UC.validationErrors.login">
+      {{ UC.validationErrors.login.message }}
+    </div>
+    <label>Username
+      <input type="text" ng-model="UC.logUser.username" />
+    </label>
+    <label>Password
+      <input type="password" ng-model="UC.logUser.password">
+    </label>
+    <input type="submit" value="Login" />
+  </form>
+</fieldset>
+
+<fieldset id="new_user_registration">
+<h3>New User?</h3>
+<p>User Registration</p>
+  <form ng-submit="UC.register()">
+    <div ng-if="UC.validationErrors.first_name">
+      {{ UC.validationErrors.first_name.message }}
+    </div>
+    <label>First Name
+      <input type="text" ng-model="UC.regUser.first_name" />
+    </label>
+    <div ng-if="UC.validationErrors.last_name">
+      {{ UC.validationErrors.last_name.message }}
+    </div>
+    <label>Last Name
+      <input type="text" ng-model="UC.regUser.last_name" />
+    </label>
+    <div ng-if="UC.validationErrors.password">
+      {{ UC.validationErrors.username.message }}
+    </div>
+    <label>Username
+      <input type="text" ng-model="UC.regUser.username" />
+    </label>
+    <div ng-if="UC.validationErrors.password">
+      {{ UC.validationErrors.password.message }}
+    </div>
+    <label>Password
+      <input type="password" ng-model="UC.regUser.password">
+    </label>
+    <input type="submit" value="Register" />
+  </form>
+</fieldset>
+
+
+
+</div>
